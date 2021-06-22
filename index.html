@@ -30,15 +30,20 @@
                 <div class="header_right" id="myNavbar">
                     <ul class="header_ul">
                         <li class="header_li">
-                            <a href="#blog" class="header_a">Blog</a>
-                        </li>
-                        <li class="header_li">
-                            <a href="#about" class="header_a">About</a>
+                            <a href="index.html" class="header_a">Blog</a>
                         </li>
                         <li class="header_li">
                             <a href="#contact" class="header_a">Contact</a>
                         </li>
                     </ul>
+                </div>
+
+                <div class="header_navBurger">
+                    <div class="burger">
+                        <span class="lineBurger"></span>
+                        <span class="lineBurger center"></span>
+                        <span class="lineBurger"></span>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -51,103 +56,81 @@
                 <h1>read articles to fill spare time on the website</h1>
             </div>
         </div>
-        
-        <div class="content_article">
-            <div class="content_articleLeft">
-                <div class="content_articleLeftTop">
-                    <!-- TOP POST ARTICLE -->
-                    <div class="topPost">
-                        <h3 class="title_h3" style="margin-bottom: 10px;">Top Post</h3>
-                        <hr style="width: 8%; border-color: #222222; margin: 4px 0 8px 0;">
-                        <div class="topPost_card">
-                            <img class="topPost_cardImg" src="https://picsum.photos/id/237/1920/1080" alt="...">
-                            <div class="topPost_cardBody">
-                                <h4 class="topPost_cardBody_h4">Anjing Lu Kontol Memek ASU BADJINGAN</h4>
-                            </div>
+
+        <div class="mainContent"> 
+            <aside class="content_aside">
+                <div id="bestWritersCard" class="content_aside_bestWriters">
+                    <h3 class="title_bestWriters">Best Writers</h3>
+                    <hr>
+                </div>
+                <div class="content_socialMediaCenter">
+                    <h3 class="title_socialMedia">Social Media</h3>
+                    <hr>
+                    <div class="about_me">
+                        <div class="imgMe">
+                            <img src="https://media-exp3.licdn.com/dms/image/C5603AQEzzSG3_R7WEQ/profile-displayphoto-shrink_200_200/0/1596813956290?e=1629936000&v=beta&t=P_pvmoqNq3fXph1IiweV_KTt42Pf8wgUH-p6hxysI3Q" alt="...">
+                        </div>
+                        <div class="descMe">
+                            <p>Saya adalah seorang Junior Developer, mulai mendalami ilmu programming saya pada saat saya lulus SMA.</p>
                         </div>
                     </div>
+                    <div class="social_mediaIcon">
+                        <a href="https://www.facebook.com/martinus.richard" target="_blank">
+                            <i class="fab fa-facebook-f social_mediaIcon_fb"></i>
+                        </a>
+                        <a href="https://github.com/Martinus21" target="_blank">
+                            <i class="fab fa-github social_mediaIcon_github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/martinus-richard-ticoalu-532112176/" target="_blank">
+                            <i class="fab fa-linkedin social_mediaIcon_linkedin"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
+            </aside>
             
-            <div class="content_articleRight">
-                <div class="content_container">
-                    <div class="card">
-                        <div class="cardBody">
-                            <h4 class="cardBody_h4">Anjing Lu Kontol Memek ASU BADJINGAN</h4>
-                            <p class="cardBody_author">Author: Anak Anjing</p>
-                            <p class="cardBody_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quisquam reiciendis voluptates doloribus quaerat debitis quis omnis excepturi.</p>
-                        </div>
-                    </div>
+            <!-- ArticleAll -->
+            <div class="content_articleAll">
+                <h3 class="content_articleAllTop_h3">Blog</h3>
+                <hr style="border: 3px solid #777777; width: 2%; margin: auto auto 10px;">
+    
+                <!-- Tabs -->
+                <div class="content_articleAllTop_tab">
+                    <button class="content_articleAllTop_tab_btnTab" onclick="changeTabs(event, 'All')" id="activeOpen">All</button>
+                    <button class="content_articleAllTop_tab_btnTab" onclick="changeTabs(event, 'Culture')">Culture</button>
+                    <button class="content_articleAllTop_tab_btnTab" onclick="changeTabs(event, 'Tech')">Tech</button>
+                    <button class="content_articleAllTop_tab_btnTab" onclick="changeTabs(event, 'Entertainment')">Entertainment</button>
                 </div>
+                <!-- End Tabs -->
+    
+                <!-- Content Tabs -->
+                <article id="All" class="content_articleAllBottom">
+                </article>
+                <!-- End Content Tabs -->
+    
+                <!-- Content Tabs -->
+                <article id="Culture" class="content_articleAllBottom">
+                </article>
+                <!-- End Content Tabs -->
+    
+                <!-- Content Tabs -->
+                <article id="Tech" class="content_articleAllBottom">
+                </article>
+                <!-- End Content Tabs -->
+    
+                <!-- Content Tabs -->
+                <article id="Entertainment" class="content_articleAllBottom">
+                </article>
+                <!-- End Content Tabs -->
             </div>
-        </div>
-
-        <div class="content_articleAll">
-            <h3 class="content_articleAllTop_h3">Blog</h3>
-            <hr style="border: 3px solid #777777; width: 2%; margin: auto auto 10px;">
-
-            <div class="content_articleAllTop_tab">
-                <button class="content_articleAllTop_tab_btnTab" onclick="changeTabs(event, 'All')" id="activeOpen">All</button>
-                <button class="content_articleAllTop_tab_btnTab" onclick="changeTabs(event, 'Culture')">Culture</button>
-                <button class="content_articleAllTop_tab_btnTab" onclick="changeTabs(event, 'Tech')">Tech</button>
-                <button class="content_articleAllTop_tab_btnTab" onclick="changeTabs(event, 'Entertainment')">Entertainment</button>
-            </div>
-
-            <!-- Content Tabs -->
-            <article id="All" class="content_articleAllBottom">
-            </article>
-            <!-- End Content Tabs -->
-
-            <!-- Content Tabs -->
-            <article id="Culture" class="content_articleAllBottom">
-            </article>
-            <!-- End Content Tabs -->
-
-            <!-- Content Tabs -->
-            <article id="Tech" class="content_articleAllBottom">
-            </article>
-            <!-- End Content Tabs -->
-
-            <!-- Content Tabs -->
-            <article id="Entertainment" class="content_articleAllBottom">
-            </article>
-            <!-- End Content Tabs -->
-        </div>
-        
-        <div class="content_socialMedia">
-            <div class="content_socialMediaCenter">
-                <div class="social_mediaIcon" style="display: grid; grid-template-columns: auto auto auto; width: 100%; text-align: center;">
-                    <i class="fab fa-facebook-f" style="font-size: 28px"></i>
-                    <i class="fab fa-instagram" style="font-size: 28px"></i>
-                    <i class="fab fa-twitter" style="font-size: 28px"></i>
-                </div>
-                <div class="social_inputGroup">
-                    <input type="text">
-                </div>
-            </div>
+            <!-- End Article All -->
         </div>
     </main>
 
     <footer class="footer">
-        
+        <p>Copyright &copy; 2021. | Build with Love <i class="far fa-heart" style="color: red;"></i> By. Martinus Richard Ticoalu.</p>
     </footer>
 
     <!-- Script -->
     <script src="./script/script.js"></script>
-
-    <script>
-        // data.forEach(function(e){
-        //     var dataCard =`<div class="card">
-        //                     <img class="cardImg" src="https://picsum.photos/id/237/1920/1080" alt="...">
-        //                     <div class="cardBody">
-        //                         <h4 class="cardBody_h4">Anjing Lu Kontol Memek ASU BADJINGAN</h4>
-        //                         <p class="cardBody_author">Author: Anak Anjing</p>
-        //                         <p class="cardBody_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quisquam reiciendis voluptates doloribus quaerat debitis quis omnis excepturi.</p>
-        //                     </div>
-        //                 </div>`
-
-        //     document.querySelector("#All").insertAdjacentHTML('beforeend',dataCard)
-        // });
-    </script>
 </body>
 </html>

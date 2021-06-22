@@ -54,18 +54,37 @@ dataEntertain.forEach(function(item){
     document.querySelector("#Entertainment").insertAdjacentHTML('afterbegin',dataCard)
 });
 
+// Best Writers
+dataBestWriters.forEach(function(item){
+    var dataBestWritersCard = ` <div class="card_bestWriters">
+                                    <div class="card_left">
+                                        <img src="${item.img}" alt="...">
+                                    </div>
+                                    <div class="card_middle">
+                                        <h4>${item.author}</h4>
+                                        <p>${item.description.substr(0, 50)}...</p>
+                                    </div>
+                                    <div class="card_right">
+                                        <button>Go To Profile</button>
+                                    </div>
+                                </div>
+    `
+    document.querySelector("#bestWritersCard").insertAdjacentHTML('beforeend',dataBestWritersCard)
+})
+
 document.getElementById("activeOpen").click();
-function changeTabs(event, category) {
+function changeTabs(event, categoryTabs) {
     let contentArticle = document.getElementsByClassName("content_articleAllBottom");
+    console.log(categoryTabs)
     for (let i=0; i < contentArticle.length; i++) {
       contentArticle[i].style.display = "none";
     }
 
     let tabsArticle = document.getElementsByClassName("content_articleAllTop_tab_btnTab");
-    for (i = 0; i < tabsArticle.length; i++) {
-      tabsArticle[i].className = tabsArticle[i].className.replace(" active", "");
+    for (let i = 0; i < tabsArticle.length; i++) {
+      tabsArticle[i].className = tabsArticle[i].className.replace("active", "");
     }
   
-    document.getElementById(category).style.display = "grid";
+    document.getElementById(categoryTabs).style.display = "grid";
     event.currentTarget.className += " active";
 }

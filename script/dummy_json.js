@@ -87,3 +87,24 @@ var data = [
         "description" : "HBO Max wants you to pay and stay. The one-year-old streaming service fresh off a highly anticipated Friends reunion special will now offer two tiers of subscription: One with ads, and one without."
     }
 ]
+
+var dataBestWriters = [
+    {
+        "id" :"1", 
+        "img" : "https://static.wixstatic.com/media/891d78_500ae0cb09934020b5d8175ddb85300c~mv2.jpg/v1/fill/w_438,h_439,al_c,q_80,usm_0.66_1.00_0.01/image_JPG.webp",
+        "author" :"Christianna Silva",  
+        "description" : "Howdy. I'm a tech reporter for Mashable, where I cover Facebook and Instagram from Brooklyn, New York. You can read some of my past work at NPR, MTV News, PHOENIX magazine, Teen Vogue, VICE News, Newsweek, FiveThirtyEight, and more. ​I was raised in a small town on the Southern Arizona border and I like painting, playing bass guitar, and looking at my cat, Colby Jack."
+    },
+    {
+        "id" :"2", 
+        "img" : "https://images.squarespace-cdn.com/content/v1/5ca649119b8fe810e028397e/1554403755254-PBF5EBFZZ8K8GP4U0911/ke17ZwdGBToddI8pDm48kLxnK526YWAH1qleWz-y7AFZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVH33scGBZjC30S7EYewNF5iKKwhonf2ThqWWOBkLKnojuqYeU1KwPvsAK7Tx5ND4WE/me.jpg?format=500w",
+        "author" :"Tim Marcin", 
+        "description" : "Hi there, I’m Tim Marcin. I’m a journalist, writer and frequent tweeter living in New York City. (But I’m from Delaware, which is neat because nobody is from Delaware.) You might’ve seen my work at Newsweek, Vice News, International Business Times, CSN, Front Office Sports or at twitter.com/timmarcin.  I’ve written about sports, culture, politics and just about everything else. Have a look around and check out my clips. "
+    },
+    {
+        "id" :"3", 
+        "img" : "https://images.squarespace-cdn.com/content/v1/5a1044cbbe42d60e6a625e1d/1515518848931-RQ73A4BDF66JLV67AKPX/ke17ZwdGBToddI8pDm48kFEBgILyiTnhZABRKgnV-2Z7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmyh-8_5GJNvrfz4o4yOfLS66u_lcf2VTjKMMk01TMZP-2zgulA6mT1Z85jxTh44oq/untitled-83+copy.jpg?format=500w",
+        "author" :"Nicole Gallucci", 
+        "description" : "Hello and welcome! My name is Nicole and I'm currently a Culture Reporter at Mashable where I cover the wonderful world of web trends along with the intersections of digital culture and entertainment, lifestyle, politics, activism, and more."
+    }
+]
